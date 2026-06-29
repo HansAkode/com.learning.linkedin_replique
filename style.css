@@ -1,0 +1,572 @@
+body {
+    margin: 30px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 14% 17% 34% 21% 14%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "va sb sb sb vb"
+        "vi pr co mo ve";
+    font-family: Tahoma;
+    /* Verdana */
+}
+
+body,
+.homebar,
+.re4,
+.cearter1 {
+    width: 100%;
+    height: max-content;
+}
+
+.isfollower {
+    color: rgb(25, 25, 221);
+    padding: 5px;
+    font-size: 0.75em;
+    
+}
+
+.posterVideo {
+    color: green;
+}
+
+.posterImage {
+    color: rgb(66, 66, 248);
+}
+
+.posterArticle {
+    color: rgb(239, 49, 49);
+}
+
+.r1,
+.re8,
+.addcreat {
+    width: 100%;
+}
+
+.el1,
+.re11 {
+    width: max-content;
+}
+
+.shbar,
+.inf2 h4 {
+    font-size: 0.7em;
+}
+
+a,
+.infos h4,
+.inf1 a,
+.infocre h4,h5,
+.poster p {
+    font-size: 0.8em;
+}
+
+.infos h3,
+.re3 h4 {
+    font-size: 1em;
+}
+
+.inf1 a,
+.inf2 h4 {
+    color: blue;
+}
+
+.logo,
+.ci2,
+.re7 {
+    width: 40px;
+}
+
+.logo,
+.shbar,
+.re3 h4,
+.ci2,
+.re7 {
+    height: 40px;
+}
+
+.infos,
+.inf1,
+.inf3,
+.inf2,
+.poster,
+.post2,
+.cearter1  {
+    border-radius: 10px;
+}
+
+.infos,
+.inf1,
+.inf3,
+.inf2,
+.post,
+.poster {
+    width: 95%;
+    background: white;
+}
+
+.ci1,
+.re9 {
+    width: 60px;
+    height: 60px;
+}
+
+.post2,
+.cearter1 {
+    background: white;
+}
+
+.cearter1,
+.cl1,
+.part2,
+.col1,
+.infos,
+.inf1,
+.inf3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row2,
+.re4,
+.creator,
+.entete1,
+.homebar,
+.pied   {
+    display: flex;
+    flex-direction: row;
+}
+
+.xp,
+.onglet,
+.onglet1,
+.inf2,
+.post,
+.re3,
+.poster,
+.inf1,
+.inf3 {
+    height: max-content;
+}
+
+.onglet h3,
+.onglet1 h3 {
+    align-content: center;
+    padding: 0px 0px 5px 0px;
+    margin: 0px; 
+    font-size: 0.7em;
+}
+
+.homebar hr,h4,
+.inf1 a,
+.el1 h5,
+.icon,
+.tri h5,
+.re6,
+.poster h4,h5,
+.reaction h6,
+.pied h6,
+.post2 h3,
+.cearter1 h3, h4, h5 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.inf1 h3,
+.inf2 h3,h4,
+.poster hr, 
+.poster p {
+    padding: 0px;
+}
+
+.infos h3,
+.infos h4 {
+    padding: 0px 15px;
+    margin: 0px;
+}
+
+.poster hr,
+.inf1 h3,
+.row1,
+.inf2 h3,h4,
+.element,.re3 {
+    margin: 0px 10px;
+}
+
+.inf1,
+.inf3,
+.inf2,
+.tri,
+.addcreat {
+    margin: 10px 0px;
+}
+
+.inf1,
+.inf3,
+.inf2,
+.post {
+    padding: 10px 0px;
+}
+
+.creator,
+.pied,
+.post2 {
+    padding: 10px;
+}
+
+.profile,
+.contenues,
+.cearter1 {
+    padding: 20px 0px;
+}
+
+.profile,
+.vide1,
+.contenues,
+.plusinfo,
+.vide2 {
+    background:  #F4F2EE;
+    /*rgb(182, 178, 178)*/
+}
+
+.r1,
+.re7,
+.ci4,
+.re9,
+.re10 {
+    background: beige;
+}
+
+.ci1,
+.r2,
+.ci2,
+.re6 {
+    background: grey;
+}
+
+.part2,
+.part3,
+.el2,
+.cl1{
+    gap: 4px;
+}
+
+.el2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inf1,
+.inf3,
+.row1,
+.inf2,
+.col1,
+.element,
+.el1,
+.tri,
+.infocre {
+    gap: 5px;
+}
+
+.re3,
+.re4,
+.addcreat,
+.row2,
+.shbar {
+    gap: 10px;
+}
+
+.re4,
+.part2,
+.pied {
+    justify-content: space-around;
+}
+
+.row1,
+.inf3,
+.element {
+    justify-content: start;
+}
+
+.cl1,
+.logo {
+    justify-content: center;
+}
+
+.entete1,
+.creator,
+.infocre,
+.reaction,
+.inf2 {
+    justify-content: space-between;
+}
+
+.re3 h4,
+.re11,
+.creator {
+    align-content: center;
+}
+
+.pied {
+    align-items: center;
+}
+
+.shbar,
+.logo,
+.row1,
+.inf2,
+.element,
+.el1 {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: center;
+}
+
+.re3, 
+.tri,
+.infocre,
+.reaction,
+.part3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.onglet,
+.onglet1,
+.addcreat {
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+    align-items: center;
+}
+
+a {
+    color: rgb(7, 105, 241);
+}
+
+.homebar {
+    grid-area: sb;
+    gap: 12px;
+}
+
+.logo {
+    border-radius: 5px;
+    background: rgb(8, 109, 232);
+    margin: 2px 0px;
+    justify-items: unset;
+    font-size: 2.4em;
+    color: white;
+}
+
+.shbar {
+    width: 20%;
+    margin: 2px 70px 2px 0px;
+    padding: 0px 0px 0px 10px;
+    border: 1px solid rgba(110, 110, 110, 0.673);
+    border-radius: 40px;
+}
+
+.onglet {
+    width: 75px;
+    color: rgb(147, 147, 147);
+}
+
+.onglet:hover,
+.onglet1 {
+    color: black;
+}
+
+.onglet1 {
+    width: 70px;
+    border-bottom: 1.7px solid black;
+}
+
+.vide1 {
+    grid-area: vi;
+}
+
+.profile {
+    grid-area: pr;
+}
+
+.infos {
+    height: 230px;
+    position: relative;
+}
+
+.infos h4 {
+    color: rgb(126, 124, 124);
+}
+
+.xp {
+    background: rgba(255, 192, 203, 0.782);
+    border-radius: 5px;
+    margin: 10px 15px;
+}
+
+.xp h3 {
+    border: 1px dashed black;
+    /* border-style: dashed;  / pointillés /
+border-style: dotted;  / points /
+border-style: double;  / double ligne /
+border-style: groove;
+border-style: ridge;
+border-style: inset;
+border-style: outset;
+*/
+    margin: 5px;
+}
+
+.r1 {
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0px 0px 40px 0px;
+}
+
+.ci1 {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    border: 3.5px solid white;
+    border-radius: 70px;
+}
+
+.inf1 h3 {
+    font-size: 0.65em;
+}
+
+.r2 {
+    width: 15px;
+    height: 15px;
+}
+
+.inf2 h3,h4 {
+    font-size: 0.65em;
+}
+
+.element {
+    justify-items: unset;
+}
+
+
+.contenues {
+    grid-area: co;
+}
+
+.post {
+    border-radius: 15px;
+}
+
+.re3 {
+    width: 100%-10px;
+}
+
+.re3 h4 {
+    width: 80%;
+    border: 1px solid grey;
+    border-radius: 40px;
+    padding: 0px 20px;
+    margin: 0;
+}
+
+.ci2 {
+    border-radius: 45px;
+}
+
+.re4 {
+    margin: 10px 0px 5px 0px;
+}
+
+.el1 {
+    justify-items: unset;
+}
+
+.tri {
+    width: 95%;
+}
+
+.re6 {
+    width: 78%;
+    height: 1px;
+}
+
+.poster {
+    margin: 15px 0px;
+}
+
+.entete1 {
+    padding: 5px 10px;
+}
+
+.part2 {
+    align-items: start;
+}
+
+.poster p {
+    margin: 5px 10px;
+}
+
+.re8 {
+    height: 600px;
+    background: rgb(205, 205, 205);
+}
+
+.reaction {
+    margin: 10px 10px 05px 10px;
+}
+
+.ci4 {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+}
+
+.plusinfo {
+    grid-area: mo;
+}
+
+.post2 {
+    margin: 20px 0px;
+}
+
+.cearter1 h3,
+h4,
+h5 {
+    font-size: 0.76em;
+}
+
+.addcreat {
+    justify-items: unset;
+}
+
+.cearter1 h2 {
+    font-size: 0.9em;
+    margin: 0px 20px;
+}
+
+.row2 {
+    width: 90%;
+}
+
+.re10 {
+    width: 50px;
+    height: 50px;
+}
+
+.re11 {
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 0px 10px;
+}
+
+.vide2 {
+    grid-area: ve;
+}
