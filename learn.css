@@ -1,0 +1,24 @@
+
+
+
+/*Changement de l'aspet du curseur*/
+div {
+cursor: pointer;   /* main qui ressemble à une main */
+cursor: text;      /* curseur de saisie */
+cursor: grab;      /* main qui prend un élément */
+cursor: not-allowed; /* interdit */
+cursor: wait;      /* chargement */
+cursor: crosshair; /* viseur */
+cursor: help;      /* point d’aide */
+}
+
+/*Utilisation des bordures*/
+div {
+border-style: dashed;  /* pointillés */
+border-style: dotted;  /* points */
+border-style: double;  /* double ligne */
+border-style: groove;
+border-style: ridge;
+border-style: inset;
+border-style: outset;
+}

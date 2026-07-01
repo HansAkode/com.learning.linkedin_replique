@@ -46,3 +46,37 @@ el.addEventListener("click",() => {
     }
 });
 });
+
+// créer une barre de recherche
+
+// addEventListener("action_lesteening", () => {} fonction_applying);
+
+const researchInput = document.querySelector("#search_bar");
+const researchOutput = document.querySelector(".research_results");
+const researchValue = ["Jean", "Paul", "Jacques", "Pierre", "Marie", "Sophie", "Lucie", "Julien", "Antoine", "Claire"];
+
+researchInput.addEventListener("keyup", () => {
+    const query = researchInput.value.toLowerCase().trim();
+    researchOutput.innerHTML = "";
+
+    if (query === "") {
+        researchOutput.style.visibility = "hidden";
+        return;
+    }
+
+    const filteredResults = researchValue.filter(name => name.toLowerCase().includes(query));
+
+    filteredResults.forEach(name => {
+        const item = document.createElement("div");
+        item.className = "result_item";
+        item.textContent = name;
+        researchOutput.appendChild(item);
+    });
+
+    researchOutput.style.visibility = "visible";
+});
+
+
+// Ajout des commentaires sur les publications
+
+const commentButtons = document.querySelector(".re3 h4");

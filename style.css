@@ -1,7 +1,7 @@
 body {
-    margin: 30px 0px 0px 0px;
+    margin: 0px;
     display: grid;
-    grid-template-columns: 14% 17% 34% 21% 14%;
+    grid-template-columns: 12% 17% 38% 21% 12%;
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
         "va sb sb sb vb"
@@ -10,12 +10,85 @@ body {
     /* Verdana */
 }
 
+.tabBar_detail {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 0px 40px;
+    align-items: end;
+
+}
+
 body,
 .homebar,
 .re4,
 .cearter1 {
     width: 100%;
     height: max-content;
+}
+
+.research {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+position: relative;
+margin: 0px 0px 0px 10px;
+}
+
+.icon_research {
+    position: absolute;
+    padding: 0px 0px 0px 10px;
+    font-size: 10px;
+}
+
+#search_bar {
+border: 0.5px solid gray;
+border-radius: 100px;
+width: 190px;
+height: 35px;
+padding: 0px 40px;
+}
+
+#search_bar:focus {
+    
+    outline: none;
+border: 2px solid black;
+width: 350px;
+}
+
+.research:focus-within  .research_results {
+    visibility: visible;
+}
+
+.homebar:focus-within .onglet1 h3 {
+    font-size: 0em;
+}
+
+.homebar:focus-within .onglet h3 {
+    font-size: 0em;
+}
+
+.research_results {
+    visibility: hidden;
+    position:absolute;
+    width: 433px;
+    min-height: 50px;
+    border-radius: 5px;
+    background-color: white;
+    top: 40px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.result_item {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.result_item:hover {
+    background: rgba(128, 128, 128, 0.512);
 }
 
 .isfollower {
@@ -46,6 +119,16 @@ body,
 .el1,
 .re11 {
     width: max-content;
+}
+
+.el1 {
+    padding: 10px 6px;
+    border-radius: 5px;
+}
+
+.el1:hover{
+    background: rgba(212, 212, 212, 0.345);
+    
 }
 
 .shbar,
@@ -152,9 +235,9 @@ a,
 .onglet h3,
 .onglet1 h3 {
     align-content: center;
-    padding: 0px 0px 5px 0px;
-    margin: 0px; 
-    font-size: 0.7em;
+    padding: 0px 0px 05px 0px;    
+    margin: 0px 0px 0px 0px;
+    font-size: 0.6em;
 }
 
 .homebar hr,h4,
@@ -279,6 +362,7 @@ a,
     gap: 10px;
 }
 
+
 .re4,
 .part2,
 .pied {
@@ -352,13 +436,14 @@ a {
 
 .homebar {
     grid-area: sb;
-    gap: 12px;
+    align-items: center;
+    padding: 5px 0px;
+    justify-content: start;
 }
 
 .logo {
     border-radius: 5px;
     background: rgb(8, 109, 232);
-    margin: 2px 0px;
     justify-items: unset;
     font-size: 2.4em;
     color: white;
@@ -384,7 +469,6 @@ a {
 
 .onglet1 {
     width: 70px;
-    border-bottom: 1.7px solid black;
 }
 
 .vide1 {
@@ -468,12 +552,34 @@ border-style: outset;
     width: 100%-10px;
 }
 
+.re3 {
+    margin: 10px 10px 0px 10px;
+}
+
+
 .re3 h4 {
     width: 80%;
     border: 1px solid grey;
     border-radius: 40px;
     padding: 0px 20px;
     margin: 0;
+    font-size: 0.85em;
+}
+
+.el2:hover {
+    cursor: pointer;
+}
+
+.isfollower:hover {
+    background: rgba(141, 141, 244, 0.197);
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.re3 h4:hover {
+    background: rgba(212, 212, 212, 0.345);
+    cursor: pointer;
 }
 
 .ci2 {
@@ -481,7 +587,7 @@ border-style: outset;
 }
 
 .re4 {
-    margin: 10px 0px 5px 0px;
+    margin: 12px 0px 8px 0px;
 }
 
 .el1 {
