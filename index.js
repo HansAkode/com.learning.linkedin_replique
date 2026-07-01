@@ -79,4 +79,32 @@ researchInput.addEventListener("keyup", () => {
 
 // Ajout des commentaires sur les publications
 
+
+
 const commentButtons = document.querySelector(".re3 h4");
+
+const addComment = document.querySelector(".icon4");
+
+const allComments = document.querySelector(".commentsList");
+const writeComment = document.querySelector("#commentInput");
+
+writeComment.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        const commentText = writeComment.value.trim();
+        if (commentText === "") return;
+
+        const item = document.createElement("div");
+        item.className = "comment_item";
+        item.textContent = commentText;
+        allComments.appendChild(item);
+        writeComment.value = "";
+    }
+});
+
+
+
+
+
+
+

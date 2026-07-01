@@ -26,6 +26,111 @@ body,
     height: max-content;
 }
 
+.circle {
+     width: 35px;
+    height: 35px;
+    background: blue;
+    border-radius: 100%;
+    margin: 0px 10px 0px 10px;
+}
+
+.comments {
+    width: 100%;
+    height: min-content;
+    background: red;
+}
+
+.newComment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    background: pink;
+    position: relative;
+}
+
+.comment_item {
+    width: 100%;
+    height: max-content;
+    background: green;
+}
+
+
+#commentInput {
+    width: 65%;
+    height: 40px;
+    outline: none;
+    border: 1px solid rgba(110, 110, 110, 0.673);
+    border-radius: 300px;
+    padding: 0px 100px 0px 20px;
+}
+
+#commentInput:focus {
+    height: 80px;
+    border-radius: 20px;
+    padding: 0px 100px 25px 20px;
+}
+
+.newComment:focus-within .icon{
+    top: 70px;
+}
+
+.newComment:focus-within .icon1{
+    right: 450px;
+}
+
+.newComment:focus-within .icon2{
+    right: 420px;
+}
+
+.newComment:focus-within .icon3{
+    right: 390px;
+}
+.icon4 {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    color: white;
+    background: blue;
+    font-size: 0.7em;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;    
+    visibility: hidden;
+}
+
+.newComment:focus-within .icon4 {
+    position: absolute;
+    visibility: visible;
+    top: 62px;
+    right: 36px;
+    cursor: pointer;
+}
+
+.icon {
+    position: absolute;
+    font-size: 0.5em;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.icon1 {
+    right: 90px;
+}
+
+.icon2 {
+    right: 60px;
+}
+
+.icon3 {
+    right: 30px;
+}
+
+
+
 .research {
     display: flex;
     flex-direction: row;
@@ -496,14 +601,7 @@ a {
 
 .xp h3 {
     border: 1px dashed black;
-    /* border-style: dashed;  / pointillés /
-border-style: dotted;  / points /
-border-style: double;  / double ligne /
-border-style: groove;
-border-style: ridge;
-border-style: inset;
-border-style: outset;
-*/
+
     margin: 5px;
 }
 
