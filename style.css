@@ -29,7 +29,7 @@ body,
 .circle {
      width: 35px;
     height: 35px;
-    background: blue;
+    background: pink;
     border-radius: 100%;
     margin: 0px 10px 0px 10px;
 }
@@ -37,7 +37,7 @@ body,
 .comments {
     width: 100%;
     height: min-content;
-    background: red;
+    background: white;
 }
 
 .newComment {
@@ -46,14 +46,18 @@ body,
     align-items: center;
     width: 100%;
     height: max-content;
-    background: pink;
+    background: white;
     position: relative;
+    margin: 0px 0px 10px 0px;
 }
 
 .comment_item {
-    width: 100%;
+    width: 100%-20px;
     height: max-content;
-    background: green;
+    background: white;
+    border-bottom: 1px solid grey;
+    padding: 5px 10px;
+    font-size: 0.8em;
 }
 
 
